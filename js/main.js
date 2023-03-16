@@ -4,7 +4,9 @@ const { createApp } = Vue
     data() {
       return {
         toDoToAdd: "",
-            
+        
+        error: false,
+
         toDoList: [
             {
                 text: "spesa",
@@ -31,10 +33,16 @@ const { createApp } = Vue
         },
         addToDo(){
             console.log(this.toDoToAdd);
-            this.toDoList.unshift({
-                text: this.toDoToAdd,
-                done: "false",
-            })
+            if (this.toDoList.length >= 3) {
+                this.toDoList.unshift({
+                    text: this.toDoToAdd,
+                    done: "false",
+                });
+                this.error = false;
+            } else {
+                this.error = true;
+            }
+            
             this.toDoToAdd = "";
         },
         invertedLine(index) {
