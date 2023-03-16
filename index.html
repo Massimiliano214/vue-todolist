@@ -13,7 +13,7 @@
     <div id="app">
         <main>
             <div class="container">
-                <input class="pD" type="text" placeholder="Inserisci cose da fare:" v-model="toDoToAdd">
+                <input class="pD" type="text" placeholder="Inserisci cose da fare:" v-model="toDoToAdd" @keyup.enter="addToDo()">
                 <button class="pD" @click="addToDo()">Inserisci</button>
                 <div class="containerToDo">
                     <ul>

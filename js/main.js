@@ -35,6 +35,7 @@ const { createApp } = Vue
                 text: this.toDoToAdd,
                 done: "false",
             })
+            this.toDoToAdd = "";
         },
     },
   }).mount('#app')
