@@ -37,5 +37,12 @@ const { createApp } = Vue
             })
             this.toDoToAdd = "";
         },
+        invertedLine(index) {
+            if (this.toDoList[index].done == 'true') {
+                this.toDoList[index].done = 'false';
+            } else {
+                this.toDoList[index].done = 'true';
+            }
+        },
     },
   }).mount('#app')
