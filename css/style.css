@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+.container {
+    margin: auto;
+    width: 1170px;
+    background-color: rgb(15, 40, 114);
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 30px;
+    border-radius: 21px;
+}
+
+.containerToDo {
+    margin-top: 30px;
+    background-color: grey;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.pD {
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+li {
+    list-style-type: none;
+    text-align: left;
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+}
+
+span {
+    flex-grow: 1;
+}
