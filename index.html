@@ -14,6 +14,7 @@
         <main>
             <div class="container">
                 <input class="pD" type="text" placeholder="Inserisci cose da fare:" v-model="toDoToAdd" @keyup.enter="addToDo()">
+                <p class="text-center" v-if="(error)">Hai inserito una parola troppo piccola</p>
                 <button class="pD" @click="addToDo()">Inserisci</button>
                 <div class="containerToDo">
                     <ul>

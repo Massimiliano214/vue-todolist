@@ -33,7 +33,7 @@ const { createApp } = Vue
         },
         addToDo(){
             console.log(this.toDoToAdd);
-            if (this.toDoList.length >= 3) {
+            if (this.toDoToAdd.length >= 3) {
                 this.toDoList.unshift({
                     text: this.toDoToAdd,
                     done: "false",
