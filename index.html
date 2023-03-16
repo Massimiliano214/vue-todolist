@@ -18,7 +18,7 @@
                 <div class="containerToDo">
                     <ul>
                         <li v-for ="(fare, index) in toDoList">
-                            <span>{{toDoList[index].text}}</span>
+                            <span :class="(toDoList[index].done == 'true')?'lineThrough':''">{{toDoList[index].text}}</span>
                             <i class="fa-solid fa-xmark"></i>
                         </li>
                     </ul>
