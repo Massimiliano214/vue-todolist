@@ -30,14 +30,11 @@ const { createApp } = Vue
             this.toDoList.splice (index,1);
         },
         addToDo(){
-            console.log(this.toDoAdd);
-            this.toDoAdd = [
-                {
-                    text: this.toDoAdd,
-                    done: "false",
-                }
-            ]
-            console.log(this.toDoAdd);
-        }
+            console.log(this.toDoToAdd);
+            this.toDoList.unshift({
+                text: this.toDoToAdd,
+                done: "false",
+            })
+        },
     },
   }).mount('#app')
