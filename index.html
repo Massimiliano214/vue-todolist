@@ -19,7 +19,7 @@
                     <ul>
                         <li v-for ="(fare, index) in toDoList">
                             <span :class="(toDoList[index].done == 'true')?'lineThrough':''">{{toDoList[index].text}}</span>
-                            <i class="fa-solid fa-xmark"></i>
+                            <i @click="removeToDo()" class="fa-solid fa-xmark"></i>
                         </li>
                     </ul>
                 </div>
