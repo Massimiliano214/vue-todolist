@@ -22,6 +22,7 @@
                             <span @click="invertedLine(index)" :class="(toDoList[index].done == 'true')?'lineThrough':''">{{toDoList[index].text}}</span>
                             <i @click="removeToDo(index)" class="fa-solid fa-xmark"></i>
                         </li>
+                        <p v-if="(toDoList.length < 1)">non hai niente da fare</p>
                     </ul>
                 </div>
             </div>
